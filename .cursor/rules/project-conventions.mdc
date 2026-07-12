@@ -1,0 +1,27 @@
+---
+description: Fly Rank capstone stack and coding conventions
+alwaysApply: true
+---
+
+# Fly Rank Capstone Conventions
+
+## Stack
+
+- Node.js (LTS), npm, Git, GitHub, Cursor
+
+## Commits
+
+Use Conventional Commits: `feat:`, `fix:`, `docs:`, `chore:`, etc.
+
+## Code Style
+
+- Minimize scope — only change what the task requires
+- Match existing patterns in the codebase
+- No secrets in commits (.env, API keys)
+- Prefer clear, self-documenting code over excessive comments
+
+## AI Behavior
+
+- Read existing code before editing
+- Run lint/test/build when relevant
+- See CLAUDE.md for full project conventions

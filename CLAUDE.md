@@ -1,51 +1,42 @@
-# Fly Rank Capstone — AI Assistant Conventions
+# CLAUDE.md
 
-This file describes the project stack and conventions for AI-assisted development in Cursor or Claude Code.
+This file gives Claude Code (or Cursor) the context it needs to work in this repository consistently.
 
-## Stack
+## Project Overview
+Fly Rank Setup — capstone project for the [track name] track. Replace this line with a one-paragraph description of what the project actually does once the core build begins.
 
-| Layer | Choice |
-|-------|--------|
-| Runtime | Node.js (LTS) |
-| Package manager | npm |
-| Version control | Git + GitHub |
-| IDE / AI assistant | Cursor |
+## Tech Stack
+- Runtime: Node.js (LTS)
+- Language: JavaScript/TypeScript (update to match your actual choice)
+- Package manager: npm
+- Framework: TBD — add once selected (e.g. Next.js, Express, etc.)
+- Testing: TBD
+- Linting/formatting: TBD (e.g. ESLint + Prettier)
 
-## Commit Messages
+> Update this section as soon as real dependencies are added — an AI assistant relies on this being accurate to give useful suggestions.
 
-Use [Conventional Commits](https://www.conventionalcommits.org/) for every commit:
+## Coding Conventions
+- Commit messages follow **Conventional Commits** (`feat:`, `fix:`, `chore:`, `docs:`, `refactor:`, etc.)
+- File/folder naming: kebab-case for files, PascalCase for components (adjust to your actual convention)
+- Prefer small, focused commits over large ones
+- Keep functions small and single-purpose; favor readability over cleverness
 
+## Project Structure
 ```
-<type>(<optional scope>): <description>
-
-[optional body]
+/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── CLAUDE.md
+└── (source folders go here as the project grows)
 ```
 
-**Types:** `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+## Working with this repo
+- Run `npm install` before anything else
+- (Add build/dev/test commands here once defined, e.g. `npm run dev`, `npm test`)
+- Do not commit `.env` files or secrets — see `.gitignore`
 
-**Examples:**
-- `feat: add user authentication endpoint`
-- `fix: handle null response from API`
-- `docs: update setup instructions in README`
-
-## Code Conventions
-
-- Prefer small, focused changes over large refactors.
-- Match existing naming and file structure in the repo.
-- Add comments only for non-obvious business logic.
-- Do not commit secrets (`.env`, API keys, credentials).
-- Write tests when adding meaningful behavior, not for trivial code.
-
-## AI Workflow
-
-1. Read surrounding code before editing.
-2. Keep diffs minimal and scoped to the task.
-3. Run relevant checks (lint, test, build) before considering work done.
-4. Follow user instructions in rules and this file over generic defaults.
-
-## Project Phases
-
-This capstone follows the Fly Rank track phases:
-
-1. **Setup** — Toolchain, repo scaffolding, first commits
-2. *(Future phases added as the project progresses)*
+## Notes for AI assistants
+- Ask before adding new dependencies
+- Follow existing code style rather than introducing new patterns
+- Flag any assumptions made when requirements are ambiguous

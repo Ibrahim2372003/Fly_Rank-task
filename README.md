@@ -1,60 +1,39 @@
-# Fly Rank Capstone
+# Fly Rank Setup
 
-AI-assisted development capstone project for the Fly Rank track.
+Capstone setup project for the [track name] track — establishing a working Node.js + Git + AI-assisted development toolchain (Claude Code / Cursor) as the foundation for the rest of the build.
 
-## About
-
-This repository is the foundation for building software with AI pair programming tools (Cursor). It tracks progress through structured phases, from toolchain setup to full application delivery.
+## Status
+🚧 Early setup phase — toolchain and repo scaffolding in place; core project work in progress.
 
 ## Tech Stack
-
-- **Runtime:** Node.js (LTS)
-- **Version control:** Git + GitHub
-- **AI IDE:** Cursor
-- **Commit format:** [Conventional Commits](https://www.conventionalcommits.org/)
-
-## Prerequisites
-
-- [Node.js LTS](https://nodejs.org/) (v20 or later)
-- [Git](https://git-scm.com/)
-- [Cursor](https://cursor.com/) (or Claude Code in your terminal)
-
-Verify your toolchain:
-
-```bash
-node -v
-git --version
-```
+- Node.js (LTS)
+- Git
+- Claude Code / Cursor as the AI-assisted development environment
 
 ## Getting Started
 
-1. Clone the repository (replace `YOUR_USERNAME` after creating the GitHub repo):
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/Fly_Rank-task.git
-   cd Fly_Rank-task
-   ```
+### Prerequisites
+- [Node.js LTS](https://nodejs.org/) installed
+- Git installed
+- Claude Code or Cursor set up in your terminal/editor
 
-2. Open the project in Cursor.
-
-3. Read [CLAUDE.md](CLAUDE.md) for stack conventions, commit format, and AI workflow guidelines before making changes.
-
-## Fly Rank Phases
-
-| Phase | Status |
-|-------|--------|
-| Setup — toolchain and repo scaffolding | Complete |
-| *(upcoming phases)* | Planned |
-
-## Project Structure
-
+### Setup
+```bash
+git clone https://github.com/Ibrahim2372003/Fly_Rank-task.git
+cd Fly_Rank-task
+npm install
 ```
-Fly_Rank-task/
-├── .cursor/rules/     # Cursor AI conventions
-├── CLAUDE.md          # Stack and coding conventions
-├── LICENSE
-└── README.md
+
+### Running
+```bash
+# Add your actual run command once the project has one, e.g.:
+npm run dev
 ```
+
+## Project Conventions
+See [`CLAUDE.md`](./CLAUDE.md) for the tech stack details and coding conventions this project follows.
+
+Commits in this repository follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 ## License
-
-MIT — see [LICENSE](LICENSE).
+This project is licensed under the MIT License — see [LICENSE](./LICENSE) for details.

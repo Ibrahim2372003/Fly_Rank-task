@@ -40,3 +40,10 @@ Fly Rank Setup — capstone project for the [track name] track. Replace this lin
 - Ask before adding new dependencies
 - Follow existing code style rather than introducing new patterns
 - Flag any assumptions made when requirements are ambiguous
+## Project Rules
+
+- All forms use react-hook-form.
+- Validation must use Zod.
+- Every component must be typed with TypeScript.
+- Never use uncontrolled inputs.
+- Every form must have accessible labels.
